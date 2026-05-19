@@ -121,6 +121,6 @@ export default function Page() {
           </article>;
         })}
       </div>
-    </div>
-  </main>;
+    </main>
+  );
 }
