@@ -31,7 +31,7 @@ export default function Page() {
 
   const sorted = useMemo(() => [...results].sort((a,b) => sortBy === "atrExtension" ? a.atrExtension - b.atrExtension : sortBy === "daily" ? b.dailyPct - a.dailyPct : b.weeklyPct - a.weeklyPct), [results, sortBy]);
 
-  return <main className="min-h-screen bg-[#090d14] text-slate-100 p-4 md:p-8">
+  return <main className="min-h-screen bg-[#090d14] text-white p-4 md:p-8">
     <div className="max-w-7xl mx-auto">
       <nav className="flex gap-6 border-b border-slate-800 pb-3 text-sm text-slate-300"><b className="text-red-400">Gurus</b><span>Signals</span><span>Liquid Leaders</span><span>Stage Analysis</span><span>Heatmap</span></nav>
       <section className="my-8 grid md:grid-cols-[1fr_auto_auto] gap-4 items-end">
