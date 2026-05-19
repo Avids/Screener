@@ -26,6 +26,8 @@ type ApiResponse = {
   errors?: string[];
 };
 
+type ApiResponse = { asOf?: string; results?: Result[]; errors?: string[]; provider?: string };
+
 const groups = [
   ["qullamaggie", "Qullamaggie", "KQ"],
   ["minervini", "Minervini", "MM"],
